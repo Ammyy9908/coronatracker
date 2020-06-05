@@ -1,0 +1,33 @@
+nav.navbar {
+      height: 6rem !important;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
+    }
+
+
+
+.box
+{
+      height: 300px;
+}
+.first
+{
+      background:linear-gradient(45deg,#A5C9FD,#BDE5FC);
+}
+.second
+{
+      background:linear-gradient(45deg,#9BE89C,#CDF97D);
+}
+.third
+{
+      background:linear-gradient(45deg,#FE8683,#FF9D9B);
+}
+
+.fourth
+{
+      background:linear-gradient(45deg,#F6CE68,#FDA682);
+}
+
+.all_data
+{
+      background:linear-gradient(45deg,#DCEFAA,#13F4D1);
+}

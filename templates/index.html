@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Corona Tracker</title>
+{% endblock %}
+
+{% block body %}
+
+<!--navbar-->
+<!-- START NAV -->
+<nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <strong>COVID-19 TRACKER</strong>
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active is-size-5 has-text-weight-semibold">
+              About Me
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAV -->
+
+    <!--hero with form-->
+    <div class="hero is-medium is-primary">
+          <div class="container">
+            <div class="hero-body">
+                  <div class="columns">
+                        <div class="column">
+                              <h1 class="title is-size-1">Track Your Country Corona Stats</h1>
+                              <div class="field">
+                                    <div class="controls">
+                                          <form action="/" method="POST">
+                                                <input class="input is-large" type="text" placeholder="Enter Your Country" name="content" id="content"><br/>
+                                                <br/>
+                                                <center><input type="submit" class="button is-danger is-large is-rounded"></center>
+                                          </form>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+
+    <!--hero end-->
+    <!--main data-->
+    <div class="hero">
+      
+            <div class="hero-body">
+                  <div class="columns">
+                        <div class="column">
+                              <div class="box first">
+                                    <h4 class="title has-text-centered">Active Cases</h4>
+                                    <h5 class="title has-text-centered">{{cases}}</h5>
+                              </div>
+                        </div>
+
+                        <div class="column">
+                              <div class="box second">
+                                    <h4 class="title has-text-centered">Cured/Discharged</h4>
+                                    <h5 class="title has-text-centered">{{recovered}}</h5>
+                              </div>
+                        </div>
+                        
+                  </div>
+
+                  <div class="columns">
+                        <div class="column">
+                              <div class="box third">
+                                    <h4 class="title has-text-centered">Deaths</h4>
+                                    <h5 class="title has-text-centered">{{death}}</h5>
+                              </div>
+                        </div>
+
+                        <div class="column">
+                             
+                                    <div class="box all_data">
+                                          <h4 class="title has-text-centered">{{totalCase}}</h4>
+                                          <h6 class="subtitle is-size-5 has-text-centered">Currently Infected Patients</h6>
+                                          <br>
+                                          <div class="container">
+                                                <div class="columns">
+                                                      <div class="column is-6">
+                                                            <h4 class="title is-size-5 has-text-centered">{{recRate}}</h4>
+                                                            <h6 class="subtitle is-size-5 has-text-centered">in Mild Condition
+                                                            </h6>
+                                                      </div>
+                                                      <div class="column is-6">
+                                                            <h4 class="title is-size-5 has-text-centered">{{deathRate}}</h4>
+                                                            <h6 class="subtitle is-size-5 has-text-centered">Serious or Critical
+
+                                                            </h6>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                        </div>
+                        
+                  </div>
+
+                 
+            </div>
+    </div>
+{% endblock %}
