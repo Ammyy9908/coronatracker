@@ -71,6 +71,11 @@ class CoronaDefault():
 
 
 
+
+
+
+
+
 @app.route('/', methods=['POST','GET'])
 def start_app():
       if request.method == "POST":
